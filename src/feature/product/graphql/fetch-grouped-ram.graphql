@@ -1,0 +1,6 @@
+query GroupRam {
+  groupedRam {
+    label
+    value
+  }
+}

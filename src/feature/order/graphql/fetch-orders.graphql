@@ -1,0 +1,50 @@
+query Orders {
+  currentOrders {
+    id
+    created
+    cancelled
+    shipped
+    products {
+      quantity
+      product {
+        name
+        category {
+          name
+        }
+        brand {
+          name
+        }
+        thumbnail
+        price
+      }
+    }
+    pending
+    total
+    user {
+      id
+    }
+    deliverTo {
+      firstName
+      lastName
+      line1
+      zipCode
+      state
+      countryCode
+      primary
+      type
+    }
+    invoice {
+      paid
+      billTo {
+        firstName
+        lastName
+        line1
+        zipCode
+        state
+        countryCode
+        primary
+        type
+      }
+    }
+  }
+}

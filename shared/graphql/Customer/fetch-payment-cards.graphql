@@ -1,0 +1,8 @@
+query CreditCards {
+  creditCards {
+    cardType
+    creditCardNumber
+    expirationDateFormatted
+    main
+  }
+}

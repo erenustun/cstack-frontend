@@ -1,0 +1,12 @@
+mutation SignIn($data: LoginInput!) {
+  signIn(input: $data) {
+    user {
+      firstName
+      lastName
+      email
+      phone
+      avatar
+    }
+    token
+  }
+}

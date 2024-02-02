@@ -1,0 +1,63 @@
+query Products(
+  $filterArgs: FilterArgsInput
+  $paginationArgs: PaginationArgsInput
+) {
+  products(filterArgs: $filterArgs, paginationArgs: $paginationArgs) {
+    count
+    take
+    data {
+      id
+      brand {
+        name
+      }
+      category {
+        name
+      }
+      specification {
+        batteryCapacity
+        batteryChargingSpeed
+        batteryReverseCharging
+        batteryType
+        batteryWirelessCharging
+        connectAudio
+        connectBluetoothVersion
+        connectConnectivity
+        connectMobileStandard
+        connectUsb
+        connectWifiStandard
+        cpuCores
+        cpuFrequency
+        cpuName
+        created
+        dataRam
+        dataStorage
+        deleted
+        dimensionDepth
+        dimensionLength
+        dimensionUnit
+        dimensionWeight
+        dimensionWidth
+        displayAspectRatio
+        displayPixelDensity
+        displayRefreshRate
+        displayResolution
+        displayScreenToBody
+        displaySize
+      }
+      ratingAverage
+      thumbnail
+      stock
+      name
+      price
+    }
+    filter {
+      storage
+      search
+      ram
+      priceMin
+      priceMax
+      category
+      brand
+    }
+  }
+}

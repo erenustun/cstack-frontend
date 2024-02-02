@@ -1,0 +1,26 @@
+.link {
+  @apply flex flex-row items-center gap-x-0.5;
+  @apply text-lg font-[600] text-primary-text;
+}
+
+.hover-underline-animation {
+  text-decoration: none;
+  position: relative;
+}
+
+.hover-underline-animation::before {
+  content: '';
+  background-color: hsl(250, 81%, 45%);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-underline-animation:hover::before {
+  bottom: 0;
+  height: 100%;
+}

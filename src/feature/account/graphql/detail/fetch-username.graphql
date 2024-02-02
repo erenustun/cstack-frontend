@@ -1,0 +1,5 @@
+query FetchCustomerName {
+  fetchCustomer {
+    email
+  }
+}

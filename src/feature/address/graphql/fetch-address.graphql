@@ -1,0 +1,15 @@
+query FetchAddress($id: String!, $filterArgs: AddressFilterArgsInput) {
+  address(id: $id, filterArgs: $filterArgs) {
+    id
+    companyName
+    title
+    firstName
+    lastName
+    line1
+    zipCode
+    state
+    countryCode
+    primary
+    phone
+  }
+}

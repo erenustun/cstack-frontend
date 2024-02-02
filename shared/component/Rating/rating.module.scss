@@ -1,0 +1,36 @@
+.react-rater {
+  display: inline-block;
+  line-height: normal;
+}
+
+.react-rater > * {
+  display: inline-block;
+  @apply mb-4 text-5xl;
+}
+
+.react-rater-star {
+  cursor: pointer;
+  position: relative;
+  @apply select-none text-blue-100;
+}
+
+.react-rater-star.will-be-active {
+  @apply text-blue-600;
+}
+
+.react-rater-star.is-active {
+  @apply text-blue-500;
+}
+
+.react-rater-star.is-active-half:before {
+  @apply text-slate-900;
+  content: '\2605';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.react-rater-star.is-disabled {
+  cursor: default;
+}

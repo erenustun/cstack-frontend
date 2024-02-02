@@ -1,0 +1,39 @@
+@tailwind base;
+
+@layer base {
+  :root {
+    --base-text: #333333;
+    --base-text-light: #777777;
+    --danger-text: #d31b1b;
+    --disabled-text: #a8a8a8;
+    --primary-text: #173854;
+    --success-text: #2cb253;
+    --warning-text: #f67b35;
+
+    --base-background: #e0e6ee;
+    --base-foreground: #e4e4e7;
+    --base-foreground-darker: #345494;
+    --danger-background: #d31b1b;
+    --gray-background: #e0e6ee;
+    --header-background: #fdfdfd;
+    --primary-background: #153a5b;
+    --success-background: #2cb22e;
+    --warning-background: #ee6e27;
+    --loading-background: #a9a9a9;
+
+    --base-active: #989898;
+    --danger-active: #9b1313;
+    --primary-active: #092944;
+    --success-active: #156520;
+    --warning-active: #9f542b;
+
+    --base-hover: #dcdcdc;
+    --danger-hover: #f83434;
+    --primary-hover: #234ba2;
+    --success-hover: #34e737;
+    --warning-hover: #ff8b50;
+
+    --accent: #619aea;
+    --secondary: #e0f4ff;
+  }
+}

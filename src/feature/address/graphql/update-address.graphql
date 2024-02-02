@@ -1,0 +1,7 @@
+mutation updateAddress($id: String!, $input: UpdateAddressInput!) {
+  updateAddress(id: $id, data: $input) {
+    affected
+    generatedMaps
+    raw
+  }
+}

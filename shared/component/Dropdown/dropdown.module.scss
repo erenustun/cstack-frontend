@@ -1,0 +1,31 @@
+.dropdown-button {
+  @apply dropdown-button-display dropdown-button-typography dropdown-button-spacing dropdown-button-border;
+}
+
+.dropdown-button-animation {
+  @apply transition-colors duration-150 ease-in;
+}
+
+.dropdown-button-border {
+  @apply rounded shadow;
+}
+
+.dropdown-button-display {
+  @apply flex items-center justify-center;
+}
+
+.dropdown-button-spacing {
+  @apply px-2 py-1 sm:px-3 sm:py-1.5;
+}
+
+.dropdown-button-typography {
+  @apply text-sm font-medium uppercase text-primary-text;
+  @apply cursor-pointer select-none;
+  @apply dropdown-button-animation;
+}
+
+.dropdown-button-typography-capitalize {
+  @apply dropdown-button-typography;
+  @apply capitalize;
+  @apply text-xl font-light;
+}

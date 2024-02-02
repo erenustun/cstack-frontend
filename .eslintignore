@@ -1,0 +1,8 @@
+/.idea
+/node_modules
+/public
+/.next
+*.json
+*.js
+*.md
+next-env.d.ts

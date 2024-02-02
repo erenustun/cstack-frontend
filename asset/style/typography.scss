@@ -1,0 +1,33 @@
+$font-scale: 1.2;
+$p-size: 1rem;
+$h5-size: calc($p-size * $font-scale);
+$h4-size: calc($h5-size * $font-scale);
+$h3-size: calc($h4-size * $font-scale);
+$h2-size: calc($h3-size * $font-scale);
+$h1-size: calc($h2-size * $font-scale);
+
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply font-dm-sans animation-speed-movement mb-1 text-2xl tracking-wide sm:text-4xl;
+  }
+  h2 {
+    @apply font-dm-sans animation-speed-movement mb-1 text-xl tracking-wide sm:text-2xl;
+  }
+  h3 {
+    @apply font-dm-sans animation-speed-movement mb-1 text-lg tracking-wide md:text-xl;
+  }
+  h4 {
+    @apply font-dm-sans animation-speed-movement mb-1 text-base tracking-wide md:text-lg;
+  }
+  h5 {
+    @apply font-dm-sans animation-speed-movement mb-1 text-base tracking-wide md:text-lg;
+  }
+  p,
+  a,
+  span,
+  i {
+    @apply font-inter animation-speed-movement mb-1 text-base tracking-wide text-primary;
+  }
+}

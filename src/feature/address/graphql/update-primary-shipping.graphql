@@ -1,0 +1,7 @@
+mutation SwapPrimaryShipping($addressId: String!) {
+  swapPrimaryAddress(addressId: $addressId) {
+    affected
+    generatedMaps
+    raw
+  }
+}

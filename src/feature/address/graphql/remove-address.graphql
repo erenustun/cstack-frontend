@@ -1,0 +1,6 @@
+mutation RemoveAddress($id: String!) {
+  deleteAddress(id: $id) {
+    affected
+    raw
+  }
+}

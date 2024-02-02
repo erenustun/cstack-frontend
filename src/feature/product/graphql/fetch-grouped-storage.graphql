@@ -1,0 +1,6 @@
+query GroupStorage {
+  groupedStorage {
+    label
+    value
+  }
+}
